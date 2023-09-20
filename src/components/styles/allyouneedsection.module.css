@@ -1,0 +1,28 @@
+.container_section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 auto;
+  background-color: rgba(248, 246, 246, 0.964);
+  padding: 50px 0;
+}
+
+.img_container {
+  max-width: 600px;
+}
+
+.text_container {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  gap: 10px;
+}
+.text_container h1 {
+  font-size: 26px;
+  color: rgb(11, 33, 105);
+}
+.text_container p {
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.758);
+}/*# sourceMappingURL=allyouneedsection.module.css.map */

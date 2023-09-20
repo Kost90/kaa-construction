@@ -1,0 +1,25 @@
+.blogs_container{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    padding: 60px;
+    background-color: rgb(255, 157, 0);
+    gap: 100px;
+}
+
+.blogs_item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 320px;
+    text-align: center;
+    h1{
+        text-transform: uppercase;
+        font-size: 28px;
+    }
+    p{
+        font-size: 20px;
+    }
+}

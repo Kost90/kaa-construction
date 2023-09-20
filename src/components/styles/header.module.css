@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 157, 0);
+  list-style: none;
+  padding: 10px;
+}
+
+.flex_container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+@media (min-width: 768px) {
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 157, 0);
+    list-style: none;
+    padding: 10px;
+    gap: 100px;
+  }
+}/*# sourceMappingURL=header.module.css.map */

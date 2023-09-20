@@ -1,0 +1,31 @@
+.container {
+  margin: 0 auto;
+  text-decoration: none;
+  list-style: none;
+}
+
+.flex_container_logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 195px;
+}
+
+.nav_menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  list-style: none;
+}
+.nav_menu a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.flex_container {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  font-weight: bold;
+}/*# sourceMappingURL=layout.module.css.map */
