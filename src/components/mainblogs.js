@@ -1,9 +1,9 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
+import { motion } from "framer-motion";
 import {blogs_container, blogs_item} from './styles/mainblogs.module.css'
 
 function Mainblogs() {
-
     const data = useStaticQuery(graphql`
     query {
         allMdx(filter: {frontmatter: {key: {eq: "blog"}}}) {
@@ -20,13 +20,33 @@ function Mainblogs() {
       }
       `)
 
+      const textVariants = {
+        hidden: {
+          x: -100,
+          opacity: 0,
+        },
+        vsisible: (custom) => ({
+          x: 0,
+          opacity: 1,
+          ease: "easeOut",
+          transition: { duration: custom * 0.3, delay: custom * 0.5 },
+        }),
+      };
+
   return (
     <ul className={blogs_container}>
-        {data.allMdx.nodes.map(node => (
-            <li key={node.id} className={blogs_item}>
+        {data.allMdx.nodes.map((node,i) => (
+            <motion.li
+          initial={"hidden"}
+          animate={"vsisible"}
+          custom={i + 1}
+          variants={textVariants}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ amount: 0.2, once: true }}
+          key={node.id} className={blogs_item}>
                 <h1>{node.frontmatter.title}</h1>
                 <p>{node.excerpt}</p>
-            </li>
+            </motion.li>
         ))}
     </ul>
   )
