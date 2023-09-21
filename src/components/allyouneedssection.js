@@ -6,23 +6,14 @@ import {container_section, img_container, text_container, flex_container} from '
 function Allyouneedssection() {
 
     const data = useStaticQuery(graphql`query {
-        mdx(id: {eq: "1912fad5-3e5a-5527-a316-1095caf003e8"}) {
-          frontmatter {
-            key
-            title
-            slug
-            date
-          }
-          excerpt(pruneLength: 1000)
-          id
+      mdx(frontmatter: {slug: {eq: "third"}}) {
+        excerpt
+        frontmatter {
+          title
         }
       }
+    }
       `)
-
-      if (!data.mdx) {
-        // Handle the case when data.mdx is null or undefined
-        return <div>No data available</div>;
-      }
 
   return (
     <div className={container_section}>
