@@ -18,11 +18,11 @@ import {
 } from "./styles/layout.module.css";
 
 const Layout = ({ children }) => {
-  const scrennWidth = window?.screen.width;
+  const screenWidth = typeof window !== 'undefined' ? window.screen.width : null;
   const [isOpen, setsiOpen] = useState(false);
 
   const toggleHamburger = () => {
-    if (scrennWidth >= 768) {
+    if (screenWidth >= 768) {
       return;
     } else {
       setsiOpen(!isOpen);
