@@ -29,7 +29,8 @@
     .blogs_container{
         display:flex;
         justify-content:center;
-        align-items: center;
+        align-items: flex-start;
+        flex-direction: row;
         padding: 60px;
         background-color: rgb(255, 157, 0);
         gap: 100px;

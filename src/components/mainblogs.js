@@ -25,11 +25,11 @@ function Mainblogs() {
           x: -100,
           opacity: 0,
         },
-        vsisible: (custom) => ({
+        visible: (custom) => ({
           x: 0,
           opacity: 1,
           ease: "easeOut",
-          transition: { duration: custom * 0.3, delay: custom * 0.5 },
+          transition: { duration: custom * 0.3, delay: custom * 0.3 },
         }),
       };
 
@@ -38,10 +38,9 @@ function Mainblogs() {
         {data.allMdx.nodes.map((node,i) => (
             <motion.li
           initial={"hidden"}
-          animate={"vsisible"}
+          whileInView={'visible'}
           custom={i + 1}
           variants={textVariants}
-          whileInView={{ y: 0, opacity: 1 }}
           viewport={{ amount: 0.2, once: true }}
           key={node.id} className={blogs_item}>
                 <h1>{node.frontmatter.title}</h1>

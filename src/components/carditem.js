@@ -1,10 +1,11 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import { motion } from "framer-motion";
 import { GatsbyImage} from 'gatsby-plugin-image';
 import {card, img_conrainer} from './styles/carditem.module.css';
 
 
-function Carditem({key, text, title, image, alt}) {
+function Carditem({key, slug, title, image, alt}) {
 
   const cardAnimation = {
     hidden: {
@@ -26,6 +27,7 @@ function Carditem({key, text, title, image, alt}) {
     key={key} className={card}>
         <h1>{title}</h1>
         <GatsbyImage image={image} alt={alt} className={img_conrainer}/>
+        <Link to={`/services/${slug}`}>About service</Link>
     </motion.div>
   )
 }

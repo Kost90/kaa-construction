@@ -43,7 +43,7 @@ function Cardlist() {
      className={section_title}>OUR SERVICES:</motion.h1>
     <div className={cards_container}>
 {data.allMdx.nodes.map(node => (
-    <Carditem key={node.id} title={node.frontmatter.title} text={node.excerpt} image={getImage(node.frontmatter.hero_image)} alt={node.frontmatter.hero_image_alt}/>
+    <Carditem key={node.id} title={node.frontmatter.title} text={node.excerpt} image={getImage(node.frontmatter.hero_image)} alt={node.frontmatter.hero_image_alt} slug={node.frontmatter.slug}/>
 ))}
     </div>
     </section>

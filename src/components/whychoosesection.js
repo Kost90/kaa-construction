@@ -9,7 +9,7 @@ function Whychoosesection() {
     hidden: {
       opacity: 0,
     },
-    vsisible: {
+    visible: {
       opacity: 1,
       ease: "easeOut",
     },
@@ -22,13 +22,13 @@ function Whychoosesection() {
            {data.map((node,i) => (
             <motion.li
             initial={'hidden'}
-            animate={'vsisible'}
+            whileInView={'visible'}
             transition={{
-            duration: 1,
-            delay: i * 0.7,}}
+              duration: 1,
+              delay: i * 0.5}}
+            viewport={{ amount: 0.2, once: true }}
             variants={liVariants}
-            whileInView={{ y: 0, opacity: 1 }}
-            viewport={{ amount: 0.2, once: true }}>{node}</motion.li>
+            >{node}</motion.li>
            ))}
         </ul>   
     </div>

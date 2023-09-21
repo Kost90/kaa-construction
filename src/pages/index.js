@@ -15,7 +15,7 @@ const IndexPage = () => {
       <Layout pageTitle="Home page">
         <Main />
         <Mainblogs />
-        <Cardlist />
+        <Cardlist/>
         <Allyouneedssection/>
         <Whychoosesection/>
         <Contactus/> 
@@ -27,19 +27,18 @@ const IndexPage = () => {
 export default IndexPage;
 
 // export const query = graphql`
-// query {
-//   allMdx(sort: {frontmatter: {date: DESC}}) {
-//     nodes {
-//       frontmatter {
-//         title
-//         slug
-//         date(formatString: "")
+//   query {
+//     allMdx(sort: { frontmatter: { date: DESC }}) {
+//       nodes {
+//         frontmatter {
+//           date(formatString: "MMMM D, YYYY")
+//           title
+//           slug
+//         }
+//         id
 //       }
-//       id
-//       excerpt
 //     }
 //   }
-// }
 // `
 
 export const Head = () => <Seo title="Home Page" />;

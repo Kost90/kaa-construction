@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "gatsby";
 import { motion } from "framer-motion";
 import {main_section, titel_text} from './styles/main.module.css';
 
@@ -40,7 +41,9 @@ function Main() {
         initial={"hidden"}
         animate={"vsisible"}
         custom={3}
-        variants={textVariants}>Contact Us</motion.button>  
+        variants={textVariants}>
+          <Link to="/contactus">Contact us</Link>
+          </motion.button>  
         </div>
     </motion.section>
   )

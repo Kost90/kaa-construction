@@ -17,8 +17,9 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 5px;
+  gap: 20px;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 .openHamburger {
@@ -29,7 +30,7 @@
   flex-direction: column;
   left: -200px;
   gap: 10px;
-  animation: hamburger 1.5s ease 0.8ms;
+  animation: hamburger 0.5s ease 0.8ms;
   animation-fill-mode: forwards;
   width: 50%;
   height: 100vh;
@@ -65,7 +66,8 @@
   display: flex;
   padding: 10px;
   z-index: 5;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: center;
 }
 
 @media (min-width: 768px) {

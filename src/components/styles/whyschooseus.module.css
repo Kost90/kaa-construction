@@ -46,6 +46,7 @@
     justify-content: center;
     max-width: 1420px;
     gap: 50px;
+    flex-direction: row;
   }
   .text_container li {
     font-size: 18px;

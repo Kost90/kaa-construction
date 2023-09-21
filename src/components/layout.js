@@ -54,6 +54,7 @@ const Layout = ({ children }) => {
           </div>
         </ul>
       <div className={hamburger} onClick={toggleHamburger}>
+        <Logo className={flex_container_logo}/>
         <Hamburger isOpen={isOpen} />
       </div>
       </nav>
