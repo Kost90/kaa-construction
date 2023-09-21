@@ -19,6 +19,11 @@ function Allyouneedssection() {
       }
       `)
 
+      if (!data.mdx) {
+        // Handle the case when data.mdx is null or undefined
+        return <div>No data available</div>;
+      }
+
   return (
     <div className={container_section}>
       <div className={flex_container}>
