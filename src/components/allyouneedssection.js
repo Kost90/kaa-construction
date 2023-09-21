@@ -7,7 +7,7 @@ function Allyouneedssection() {
 
     const data = useStaticQuery(graphql`query {
       mdx(frontmatter: {slug: {eq: "third"}}) {
-        excerpt
+        excerpt(pruneLength: 1000)
         frontmatter {
           title
         }
