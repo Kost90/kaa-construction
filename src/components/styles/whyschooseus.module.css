@@ -1,0 +1,27 @@
+.container_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(255, 157, 0);
+  padding: 50px 0;
+  gap: 30px;
+}
+.container_section h1 {
+  font-size: 36px;
+  color: rgb(11, 33, 105);
+}
+
+.text_container {
+  display: flex;
+  justify-content: center;
+  max-width: 1420px;
+  gap: 50px;
+}
+.text_container li {
+  font-size: 18px;
+  font-weight: bold;
+  color: rgba(17, 16, 16, 0.758);
+  list-style: disc;
+  text-transform: uppercase;
+}/*# sourceMappingURL=whyschooseus.module.css.map */

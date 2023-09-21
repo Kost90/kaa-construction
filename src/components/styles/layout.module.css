@@ -2,6 +2,8 @@
   margin: 0 auto;
   text-decoration: none;
   list-style: none;
+  min-height: 100vh;
+  position: relative;
 }
 
 .flex_container_logo {
@@ -11,21 +13,95 @@
   width: 195px;
 }
 
-.nav_menu {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 50px;
-  list-style: none;
-}
-.nav_menu a {
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
 .flex_container {
   display: flex;
   align-items: center;
-  gap: 50px;
+  flex-direction: column;
+  gap: 5px;
   font-weight: bold;
+}
+
+.openHamburger {
+  position: absolute;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  left: -200px;
+  gap: 10px;
+  animation: hamburger 1.5s ease 0.8ms;
+  animation-fill-mode: forwards;
+  width: 50%;
+  height: 100vh;
+  z-index: 4;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+@keyframes hamburger {
+  from {
+    left: -200px;
+  }
+  to {
+    left: 0;
+    color: rgb(232, 241, 241);
+    background-color: rgb(9, 1, 38);
+    box-shadow: -1px 4px 5px 0px rgba(0, 0, 0, 0.51);
+  }
+}
+.closeHamburger {
+  display: none;
+  position: absolute;
+  top: -175px;
+}
+.closeHamburger li:hover .routerLink {
+  color: #512da8;
+}
+.closeHamburger li:hover .icons_header {
+  color: #512da8;
+}
+
+.hamburger {
+  display: flex;
+  padding: 10px;
+  z-index: 5;
+  justify-content: flex-end;
+}
+
+@media (min-width: 768px) {
+  .container {
+    margin: 0 auto;
+    text-decoration: none;
+    list-style: none;
+    min-height: 100vh;
+    position: relative;
+  }
+  .flex_container_logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 195px;
+  }
+  .closeHamburger {
+    display: flex;
+    position: unset;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    list-style: none;
+  }
+  .closeHamburger a {
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .flex_container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    font-weight: bold;
+    flex-direction: row;
+  }
+  .hamburger {
+    display: none;
+  }
 }/*# sourceMappingURL=layout.module.css.map */

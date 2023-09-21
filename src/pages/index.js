@@ -1,5 +1,4 @@
 import * as React from "react";
-// import { useStaticQuery, graphql } from "gatsby";
 import "../components/styles/reset.css";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
@@ -7,6 +6,8 @@ import Main from "../components/main";
 import Mainblogs from "../components/mainblogs";
 import Cardlist from "../components/cardlist";
 import Allyouneedssection from "../components/allyouneedssection";
+import Whychoosesection from "../components/whychoosesection";
+import Contactus from "../components/contactus";
 
 const IndexPage = () => {
   return (
@@ -15,7 +16,9 @@ const IndexPage = () => {
         <Main />
         <Mainblogs />
         <Cardlist />
-        <Allyouneedssection/> 
+        <Allyouneedssection/>
+        <Whychoosesection/>
+        <Contactus/> 
       </Layout>
     </main>
   );

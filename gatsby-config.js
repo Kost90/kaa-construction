@@ -6,7 +6,7 @@ module.exports = {
     title: "KAA Construction",
   },
   plugins: [
-    "gatsby-plugin-image",
+  "gatsby-plugin-image",
   "gatsby-plugin-sharp",
   `gatsby-plugin-mdx`,
   "gatsby-transformer-sharp",
