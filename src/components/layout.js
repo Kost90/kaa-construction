@@ -18,7 +18,7 @@ import {
 } from "./styles/layout.module.css";
 
 const Layout = ({ children }) => {
-  const scrennWidth = window.screen.width;
+  const scrennWidth = window?.screen.width;
   const [isOpen, setsiOpen] = useState(false);
 
   const toggleHamburger = () => {
