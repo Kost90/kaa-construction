@@ -17,7 +17,7 @@ function Whychoosesection() {
 
   return (
     <div className={container_section}>
-        <h1>Why Choose Us?</h1>
+        <h1>Our testimonials</h1>
         <ul className={text_container}>
            {data.map((node,i) => (
             <motion.li

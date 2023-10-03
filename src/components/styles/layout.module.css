@@ -10,7 +10,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 195px;
+  width: 190px;
 }
 
 .flex_container {
@@ -71,19 +71,6 @@
 }
 
 @media (min-width: 768px) {
-  .container {
-    margin: 0 auto;
-    text-decoration: none;
-    list-style: none;
-    min-height: 100vh;
-    position: relative;
-  }
-  .flex_container_logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 195px;
-  }
   .closeHamburger {
     display: flex;
     position: unset;
@@ -97,13 +84,20 @@
     text-transform: uppercase;
   }
   .flex_container {
-    display: flex;
-    align-items: center;
-    gap: 50px;
-    font-weight: bold;
+    gap: 30px;
     flex-direction: row;
+    font-size: 14px;
   }
   .hamburger {
     display: none;
+  }
+}
+@media (min-width: 1024px) {
+  .closeHamburger {
+    gap: 75px;
+  }
+  .flex_container {
+    font-size: 16px;
+    gap: 50px;
   }
 }/*# sourceMappingURL=layout.module.css.map */

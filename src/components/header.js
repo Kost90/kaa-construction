@@ -14,7 +14,7 @@ function Header() {
             </div>
             <div className={flex_container}>
               <Clock/>
-            <li>Mon - Sat 7:00am - 5:00pm</li>
+            <li>Mon - Sat 8:00am - 5:00pm</li>
             </div>
             <Instagram/>
          </ul>
