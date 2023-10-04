@@ -1,7 +1,7 @@
 import React from 'react';
-import Layout from '../components/layout';
-import Seo from '../components/seo';
-import Contactus from "../components/contactus";
+import Layout from '../components/Layout/Layout';
+import Seo from '../components/Seo/Seo';
+import Contactus from "../components/Contactus/Contactus";
 
 function contactus() {
   return (

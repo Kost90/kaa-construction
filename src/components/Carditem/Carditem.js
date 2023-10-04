@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import { motion } from "framer-motion";
 import { GatsbyImage} from 'gatsby-plugin-image';
-import {card, img_conrainer} from './styles/carditem.module.css';
+import {card, img_conrainer} from './carditem.module.css';
 
 
 function Carditem({key, slug, title, image, alt}) {

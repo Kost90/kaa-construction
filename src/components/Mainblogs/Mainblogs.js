@@ -1,7 +1,7 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import { motion } from "framer-motion";
-import {blogs_container, blogs_item} from './styles/mainblogs.module.css'
+import {blogs_container, blogs_item} from './mainblogs.module.css'
 
 function Mainblogs() {
     const data = useStaticQuery(graphql`

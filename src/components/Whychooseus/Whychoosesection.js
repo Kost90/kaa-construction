@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from "framer-motion";
-import {container_section, text_container} from './styles/whyschooseus.module.css';
+import {container_section, text_container} from './whyschooseus.module.css';
 
 const data = ['Reliable', 'Higest Quality of Services', 'Eye for detail', 'Proffessional', 'Passion for precission', 'Higest skilled team']
 

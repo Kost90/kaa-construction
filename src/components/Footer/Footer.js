@@ -1,9 +1,9 @@
 import React from 'react';
-import {footer, footer_container, logo_container, list_container_footer, flex_container, border} from './styles/footer.module.css';
-import Icon from '../images/assets/phone-svgrepo-com-footer.svg';
-import Logo from '../images/assets/kaa-logo-footer.svg';
-import Clock from '../images/assets/clock-circle-svgrepo-com-footer.svg';
-import Instagram from '../images/assets/instagram-svgrepo-com-footer.svg';
+import {footer, footer_container, logo_container, list_container_footer, flex_container, border} from './footer.module.css';
+import Icon from '../../images/assets/phone-svgrepo-com-footer.svg';
+import Logo from '../../images/assets/kaa-logo-footer.svg';
+import Clock from '../../images/assets/clock-circle-svgrepo-com-footer.svg';
+import Instagram from '../../images/assets/instagram-svgrepo-com-footer.svg';
 
 function Footer() {
   return (

@@ -1,0 +1,73 @@
+.aboutus_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100%;
+  padding: 30px 10px 300px 10px;
+  gap: 20px;
+  margin: 0 auto;
+}
+.aboutus_container h1 {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgb(11, 33, 105);
+}
+.aboutus_container p {
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.758);
+  text-align: justify;
+}
+.aboutus_container button {
+  display: flex;
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.758);
+  color: rgb(11, 33, 105);
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 12px;
+}
+.aboutus_container button:hover {
+  color: rgb(250, 153, 7);
+  border: 1px solid rgb(250, 153, 7);
+}
+
+@media (min-width: 768px) {
+  .aboutus_container {
+    gap: 30px;
+  }
+  .aboutus_container h1 {
+    font-size: 26px;
+  }
+  .aboutus_container p {
+    font-size: 18px;
+    line-height: 26px;
+    max-width: 50%;
+  }
+  .aboutus_container button {
+    width: 130px;
+  }
+}
+@media (min-width: 1024px) {
+  .aboutus_container {
+    gap: 60px;
+  }
+  .aboutus_container h1 {
+    font-size: 36px;
+  }
+  .aboutus_container p {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .aboutus_container button {
+    width: 150px;
+  }
+}/*# sourceMappingURL=Aboutus.module.css.map */

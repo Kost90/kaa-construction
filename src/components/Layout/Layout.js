@@ -1,21 +1,19 @@
 import * as React from "react";
 import { useState } from "react";
-import { useStaticQuery, graphql } from "gatsby";
-import Logo from '../images/assets/kaa-logo.svg';
-import Logowihte from '../images/assets/kaa-logo-footer.svg';
+import Logo from '../../images/assets/kaa-logo.svg';
+import Logowihte from '../../images/assets/kaa-logo-footer.svg';
 import { Link } from "gatsby";
-import Header from "./header";
-import Footer from "./footer";
-import Hamburger from "./hamburgermenu";
+import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
+import Hamburger from "../Hamburgermenu/Hamburgermenu";
 import {
   container,
-  nav_menu,
   flex_container_logo,
   flex_container,
   openHamburger,
   closeHamburger,
   hamburger,
-} from "./styles/layout.module.css";
+} from "./layout.module.css";
 
 const Layout = ({ children }) => {
   const screenWidth = typeof window !== 'undefined' ? window.screen.width : null;
@@ -41,9 +39,6 @@ const Layout = ({ children }) => {
             </li>
             <li>
               <Link to="/aboutus">About Us</Link>
-            </li>
-            <li>
-              <Link to="/whychooseus">Why choose Us</Link>
             </li>
             <li>
               <Link to="/projects">Projects</Link>

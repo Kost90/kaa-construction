@@ -1,6 +1,6 @@
 import React from 'react';
-import FormContact from './contactusform';
-import {container} from './styles/contactus.module.css'
+import FormContact from '../Contactusform/Contactusform';
+import {container} from './contactus.module.css'
 
 function Contactus() {
   return (

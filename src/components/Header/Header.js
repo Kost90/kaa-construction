@@ -1,8 +1,8 @@
 import React from 'react';
-import {header, flex_container} from './styles/header.module.css';
-import Icon from '../images/assets/phone-svgrepo-com.svg';
-import Clock from '../images/assets/clock-circle-svgrepo-com.svg';
-import Instagram from '../images/assets/instagram-svgrepo-com.svg';
+import {header, flex_container} from './header.module.css';
+import Icon from '../../images/assets/phone-svgrepo-com.svg';
+import Clock from '../../images/assets/clock-circle-svgrepo-com.svg';
+import Instagram from '../../images/assets/instagram-svgrepo-com.svg';
 
 
 function Header() {

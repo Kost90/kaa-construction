@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from "gatsby";
 import { motion } from "framer-motion";
-import {main_section, titel_text} from './styles/main.module.css';
+import {main_section, titel_text} from './main.module.css';
 
 
 function Main() {

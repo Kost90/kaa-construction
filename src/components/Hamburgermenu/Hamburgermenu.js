@@ -1,5 +1,5 @@
 import React from 'react'
-import {hamburger_menu, burger, burger_1, burger_2, burger_3} from './styles/hamburgermenu.module.css'
+import {hamburger_menu, burger, burger_1, burger_2, burger_3} from './hamburgermenu.module.css'
 import { memo } from 'react';
 
 const Hamburger = memo (({isOpen}) =>{

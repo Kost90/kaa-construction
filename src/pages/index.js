@@ -1,13 +1,13 @@
 import * as React from "react";
 import "../components/styles/reset.css";
-import Layout from "../components/layout";
-import Seo from "../components/seo";
-import Main from "../components/main";
-import Mainblogs from "../components/mainblogs";
-import Cardlist from "../components/cardlist";
-import Allyouneedssection from "../components/allyouneedssection";
-import Whychoosesection from "../components/whychoosesection";
-import Contactus from "../components/contactus";
+import Layout from "../components/Layout/Layout";
+import Seo from "../components/Seo/Seo";
+import Main from "../components/Main/Main";
+import Mainblogs from "../components/Mainblogs/Mainblogs";
+import Cardlist from "../components/Cardlist/Cardlist";
+import Allyouneedssection from "../components/Allyouneedssection/Allyouneedssection";
+import Whychoosesection from "../components/Whychooseus/Whychoosesection";
+import Contactus from "../components/Contactus/Contactus";
 
 const IndexPage = () => {
   return (

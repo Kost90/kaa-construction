@@ -2,8 +2,8 @@ import React from 'react';
 import { motion } from "framer-motion";
 import { useStaticQuery, graphql } from 'gatsby';
 import { getImage } from 'gatsby-plugin-image';
-import Carditem from './carditem';
-import {card_section, cards_container, section_title} from './styles/cardlist.module.css'
+import Carditem from '../Carditem/Carditem';
+import {card_section, cards_container, section_title} from './cardlist.module.css'
 
 function Cardlist() {
     const data = useStaticQuery(graphql`
