@@ -15,6 +15,7 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "@hookform/resolvers": "^3.3.1",
     "@mdx-js/react": "^2.3.0",
     "framer-motion": "^10.16.4",
