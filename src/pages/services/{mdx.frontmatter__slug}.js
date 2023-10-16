@@ -4,15 +4,22 @@ import { GatsbyImage } from "gatsby-plugin-image";
 import { getImage } from "gatsby-plugin-image";
 import Layout from "../../components/Layout/Layout";
 import Seo from "../../components/Seo/Seo";
-import { container_service, img_conrainer, container_projects_Images, h1_title} from "./styles/services.module.css";
+import {
+  container_service,
+  img_conrainer,
+  container_projects_Images,
+  h1_title,
+} from "./styles/services.module.css";
 
 const Services = ({ data }) => {
   const projectImagesArr = [];
   // const dataMdx = data;
   const image = getImage(data.mdx.frontmatter.hero_image);
-  data.mdx.frontmatter.projects_images.map((image) =>
-    projectImagesArr.push(image)
-  );
+  const projectImages = data.mdx.frontmatter.projects_images;
+
+  if (projectImages) {
+    projectImages.map((image) => projectImagesArr.push(image));
+  }
 
   return (
     <Layout>
@@ -30,12 +37,12 @@ const Services = ({ data }) => {
       </div>
       <h1 className={h1_title}>Latest projects</h1>
       <div className={container_projects_Images}>
-        {projectImagesArr.map((image,i) => (
+        {projectImagesArr.map((image, i) => (
           <div key={i}>
-          <GatsbyImage
-            image={getImage(image)}
-            alt={data.mdx.frontmatter.hero_image_alt}
-          />
+            <GatsbyImage
+              image={getImage(image)}
+              alt={data.mdx.frontmatter.hero_image_alt}
+            />
           </div>
         ))}
       </div>
