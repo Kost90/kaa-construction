@@ -16,6 +16,13 @@
     gap: 5px;
 }
 
+.inst_icon{
+    fill: none;
+&:hover{
+    fill: white;
+}
+}
+
 @media(min-width:768px){
     .header{
         flex-direction: row;

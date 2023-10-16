@@ -33,6 +33,12 @@
   align-items: center;
   gap: 10px;
 }
+.flex_container .inst_icon {
+  fill: none;
+}
+.flex_container .inst_icon:hover {
+  fill: white;
+}
 
 .border {
   display: flex;
