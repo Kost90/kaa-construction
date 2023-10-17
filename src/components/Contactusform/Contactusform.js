@@ -1,8 +1,9 @@
-import React, {memo, useCallback} from 'react';
+import React, {memo, useCallback, useRef} from 'react';
 import { useForm } from "react-hook-form";
 import { string, object } from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import {flex_container_form} from './contactform.module.css';
+import emailjs from '@emailjs/browser';
 
 const phoneNumberRegex = /\(?([0-9]{3})\)?([ .-]?)([0-9]{3})\2([0-9]{4})/;
 
@@ -20,6 +21,7 @@ const contactSchema = {
 };
 
 const FormContact = memo(({ setvisibility }) => {
+  const form = useRef(null)
 
 //   const handelVisibility = () => {
 //     setvisibility();
@@ -35,7 +37,7 @@ const FormContact = memo(({ setvisibility }) => {
   });
 
   const onSubmit = useCallback((data) => {
-  console.log(data);
+    emailjs.sendForm('kaa-construction', 'template_7v91mub', form.current, `${process.env.GATSBY_PUBLIC_KEY}`)
     // handelVisibility();
     reset();
   }, []);
@@ -44,6 +46,7 @@ const FormContact = memo(({ setvisibility }) => {
     <form
       onSubmit={handleSubmit(onSubmit)}
       className={flex_container_form}
+      ref={form}
     >
       <input
         type="text"
