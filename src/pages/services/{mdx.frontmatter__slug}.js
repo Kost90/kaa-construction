@@ -18,12 +18,12 @@ const Services = ({ data }) => {
   const beforeImages = data.mdx.frontmatter.before_images;
   const afterImages = data.mdx.frontmatter.after_images;
 
-  if(beforeImagesArr){
-    beforeImages.map(el => beforeImagesArr.push(el))
+  if (beforeImages) {
+    beforeImages.map((el) => beforeImagesArr.push(el));
   }
 
-  if(afterImagesArr){
-    afterImages.map(el => afterImagesArr.push(el))
+  if (afterImages) {
+    afterImages.map((el) => afterImagesArr.push(el));
   }
 
   return (
