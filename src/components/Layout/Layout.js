@@ -41,9 +41,6 @@ const Layout = ({ children }) => {
               <Link to="/aboutus">About Us</Link>
             </li>
             <li>
-              <Link to="/projects">Projects</Link>
-            </li>
-            <li>
               <Link to="/contactus">Contact us</Link>
             </li>
           </div>

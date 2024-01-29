@@ -62,6 +62,13 @@
   gap: 20px;
   flex-wrap: wrap;
 }
+.container_projects_Images div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
 .container_projects_Images div img {
   height: 240px;
   border-radius: 5px;

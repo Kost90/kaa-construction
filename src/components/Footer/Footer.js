@@ -16,7 +16,7 @@ function Footer() {
             <h3>Contact Us</h3>
             <div className={flex_container}>
             <Icon/>
-            <li>+447593065276</li>
+            <a>+447593065276</a>
             </div>
             <div className={flex_container}>
               <Clock/>
@@ -29,7 +29,7 @@ function Footer() {
          </ul>
         </div>
         <div className={border}>
-            <p>@Konstantyn Dontsov</p>
+            <p>developed by Kostiantyn Dontsov</p>
         </div>
     </div>
   )

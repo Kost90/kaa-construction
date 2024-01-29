@@ -26,19 +26,5 @@ const IndexPage = () => {
 
 export default IndexPage;
 
-// export const query = graphql`
-//   query {
-//     allMdx(sort: { frontmatter: { date: DESC }}) {
-//       nodes {
-//         frontmatter {
-//           date(formatString: "MMMM D, YYYY")
-//           title
-//           slug
-//         }
-//         id
-//       }
-//     }
-//   }
-// `
 
 export const Head = () => <Seo title="Home Page" />;

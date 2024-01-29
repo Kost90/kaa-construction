@@ -12,14 +12,9 @@ import {
 } from "./styles/services.module.css";
 
 const Services = ({ data }) => {
-  const projectImagesArr = [];
-  // const dataMdx = data;
   const image = getImage(data.mdx.frontmatter.hero_image);
-  const projectImages = data.mdx.frontmatter.projects_images;
-
-  if (projectImages) {
-    projectImages.map((image) => projectImagesArr.push(image));
-  }
+  const beforeImages = data.mdx.frontmatter.before_images;
+  const afterImages = data.mdx.frontmatter.after_images;
 
   return (
     <Layout>
@@ -37,14 +32,28 @@ const Services = ({ data }) => {
       </div>
       <h1 className={h1_title}>Latest projects</h1>
       <div className={container_projects_Images}>
-        {projectImagesArr.map((image, i) => (
-          <div key={i}>
-            <GatsbyImage
-              image={getImage(image)}
-              alt={data.mdx.frontmatter.hero_image_alt}
-            />
-          </div>
-        ))}
+        <div>
+          <h2>Before:</h2>
+          {beforeImages.map((image, i) => (
+            <div key={i}>
+              <GatsbyImage
+                image={getImage(image)}
+                alt={data.mdx.frontmatter.hero_image_alt}
+              />
+            </div>
+          ))}
+        </div>
+        <div>
+          <h2>After:</h2>
+          {afterImages.map((image, i) => (
+            <div key={i}>
+              <GatsbyImage
+                image={getImage(image)}
+                alt={data.mdx.frontmatter.hero_image_alt}
+              />
+            </div>
+          ))}
+        </div>
       </div>
     </Layout>
   );
@@ -63,7 +72,12 @@ export const query = graphql`
             gatsbyImageData
           }
         }
-        projects_images {
+        before_images {
+          childImageSharp {
+            gatsbyImageData
+          }
+        }
+        after_images {
           childImageSharp {
             gatsbyImageData
           }

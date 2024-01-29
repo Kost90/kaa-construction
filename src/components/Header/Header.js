@@ -11,7 +11,7 @@ function Header() {
         <ul className={header}>
             <div className={flex_container}>
             <Icon/>
-            <li>+447593065276</li>
+            <a>+447593065276</a>
             </div>
             <div className={flex_container}>
               <Clock/>
