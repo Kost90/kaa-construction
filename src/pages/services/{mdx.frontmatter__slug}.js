@@ -12,9 +12,19 @@ import {
 } from "./styles/services.module.css";
 
 const Services = ({ data }) => {
+  const beforeImagesArr = [];
+  const afterImagesArr = [];
   const image = getImage(data.mdx.frontmatter.hero_image);
   const beforeImages = data.mdx.frontmatter.before_images;
   const afterImages = data.mdx.frontmatter.after_images;
+
+  if(beforeImagesArr){
+    beforeImages.map(el => beforeImagesArr.push(el))
+  }
+
+  if(afterImagesArr){
+    afterImages.map(el => afterImagesArr.push(el))
+  }
 
   return (
     <Layout>
@@ -34,7 +44,7 @@ const Services = ({ data }) => {
       <div className={container_projects_Images}>
         <div>
           <h2>Before:</h2>
-          {beforeImages.map((image, i) => (
+          {beforeImagesArr.map((image, i) => (
             <div key={i}>
               <GatsbyImage
                 image={getImage(image)}
@@ -45,7 +55,7 @@ const Services = ({ data }) => {
         </div>
         <div>
           <h2>After:</h2>
-          {afterImages.map((image, i) => (
+          {afterImagesArr.map((image, i) => (
             <div key={i}>
               <GatsbyImage
                 image={getImage(image)}

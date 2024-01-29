@@ -16,7 +16,7 @@ function Footer() {
             <h3>Contact Us</h3>
             <div className={flex_container}>
             <Icon/>
-            <a>+447593065276</a>
+            <a href='tel:+447593065276'>+447593065276</a>
             </div>
             <div className={flex_container}>
               <Clock/>
