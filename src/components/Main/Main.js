@@ -36,7 +36,7 @@ function Main() {
         initial={"hidden"}
         animate={"vsisible"}
         custom={2}
-        variants={textVariants}>Ensuring every inch of your house becomes the dream home you are after, performed by a teame with an eye for detail.</motion.h2>
+        variants={textVariants}>Ensuring every inch of your house becomes the dream home you are after, performed by a team with an eye for detail.</motion.h2>
         <motion.button
         initial={"hidden"}
         animate={"vsisible"}
